@@ -1,5 +1,5 @@
-import java.util.*;
 package com.galvanize;
+import java.util.*;
 // Create an Interface named Addressable with two methods:
 
 interface Addressable {
