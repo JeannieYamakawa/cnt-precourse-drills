@@ -1,5 +1,5 @@
 import java.util.*;
-
+package com.galvanize;
 // Create a class named Address that has 4 private fields:
 public class Address{
     private String street;
@@ -64,5 +64,5 @@ public class Address{
     return result.toString();
   }
 
-    
+
 }
