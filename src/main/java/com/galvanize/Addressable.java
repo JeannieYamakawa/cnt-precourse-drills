@@ -4,21 +4,22 @@ import java.util.*;
 
 interface Addressable {
 // getAddresses - takes 0 arguments, returns a List of Address objects
-    // addAddress - takes an Address, returns void
-     void addAddress(String anAddress);
+     public void addAddress(Address anAddress);
+     public List<Address> getAddresses();
 }
 
-class isAddressable implements Addressable{
+abstract class isAddressable implements Addressable{
 
     private List<Address> myListOfAddresses = new ArrayList<Address>();
 
     public List<Address> getAddresses(){
         return myListOfAddresses;
     }
+    // addAddress - takes an Address, returns void
 
-    void addAddress(String anAddress){
-        String address = new Address(anAddress)
-        myListOfAddresses = myListOfAddresses.add(address);
+    public void addAddress(String aStreet, String aCity, String aState, String aZip){
+        Address newObj = new Address(aStreet, aCity, aState, aZip);
+        myListOfAddresses.add(newObj);
     }
 
 
